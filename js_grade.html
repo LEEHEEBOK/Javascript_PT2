@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+       
+        function calgrade() {
+            var score = document.getElementById('score').value;
+            var grade;
+            
+            if (score>=90 && score<=100) {
+                grade='a';
+            } else if(score>=80){
+                grade='b';
+            } else if(score>=70){
+                grade='c';
+            } else if(score>=60){
+                grade='d';
+            } else{
+                grade='f';
+            }
+            // 좌변에 .value면 특정값을 input에다 넣을수 있다.
+            document.getElementById('grade').value = grade;
+            document.getElementById('result').innerHTML = grade;
+            
+        }
+    </script>
+</head>
+<body>
+   <div>
+       <h1>성적산출하기</h1><br>
+   </div>
+    점수: <input type="text" id="score"><br>
+    성적: <input type="text" id="grade"><br>
+    <button onclick="calgrade()">성적??</button>
+    <div id="result">성적출력</div>
+   
+    
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function imgchange() {
+            document.getElementById('id1').src = '../Javascript_PT2/afewfw.png';
+        }
+    </script>
+</head>
+<body>
+    <img id="id1" src="../Javascript_PT2/jyp.jpg" width="150" height="80"> <br>
+    <button onclick="imgchange()">그림변경하기</button>
+
+    <p>자바스크립트를 이용하면 현재 날짜와 시간 정보에도 손쉽게 접근할 수 있어요!</p>
+
+    <button onclick="printDate()">현재 날짜와 시간 표시하기!</button>
+
+    <p id="date"></p>
+
+    <script>
+
+        function printDate() {
+
+            document.getElementById("date").innerHTML = Date();
+
+        }
+
+    </script>
+    
+</body>
+</html>
