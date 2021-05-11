@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function test1() {
+            console.log('함수호출');
+        }
+        function test2() {
+            console.log('함수호출');
+            document.getElementById('id3').innerHTML =
+                document.getElementById('id2').value;
+        }
+        function test3() {
+            console.log('onkeydown 함수호출');
+            document.getElementById('id5').innerHTML =
+                document.getElementById('id4').value;
+        }
+    </script>
+</head>
+
+<body>
+    <!--  ondchange는 무언가 바뀌는 상황이 올때 호출이 된다. -->
+    <!-- onkeyon은 입력이 끝났을때(키보드에 손 땔때 이벤트 발생)-->
+    <!-- onkeydown은 키보드를 눌럿을때 -->
+    입력 1: <input type="text" id="id1" onchange="test1()"><br>
+    입력 2:<input type="text" id="id2" onkeyup="test2()"><br>
+    입력 3:<input type="text" id="id4" onkeydown="test3()"><br>
+    <p id="id3"></p>
+    <p id="id5"></p>
+</body>
+
+</html>

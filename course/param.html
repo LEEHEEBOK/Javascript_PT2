@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function test1(var1) {
+            console.log('test1함수');
+            console.log(var1); //this로 넘겨준 값 넘어오는 보기
+        }
+    </script>
+</head>
+
+<body>
+    <!-- 함수호출시 매개값 넘기기 -->
+    <!-- this일 경우 자체가 넘어가고 value 일 경우 그 값이 넘어가고 아무거나 입력하면 그 입력값만 나온다. -->
+    입력1: <input type="text" id="id1" value="기본값" onkeyup="test1(this.value)"><br>
+
+</body>
+
+</html>
