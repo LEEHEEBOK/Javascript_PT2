@@ -1,0 +1,33 @@
+div{
+    color: cornflowerblue;
+}
+header{
+    color: brown ;
+    font-size: 20px;
+}
+
+html{
+    height: 100%;
+}
+body{
+    margin-top: 100px;
+    box-sizing: border-box;
+    height: 100%;
+    background: #f5f6f7;
+    text-align: center;
+    background-color: blanchedalmond;
+}
+
+@font-face {
+    font-family: 'WandohopeB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/WandohopeB.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+input {
+    width: 20%;
+    padding: 10px 20px;
+    margin: 5px 0;
+    box-sizing: border-box;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script>
+        $(document).ready(function(){
+            $(document).ready(function(){
+            // id1 인 요소를 클릭했을 때 함수 호출
+            $("#id1").click(function() {
+                alert('id1을 클릭하셨네요');
+            });
+            $(".class2").click(function(){
+                alert('class2를 클릭하셧네요');
+            });
+            
+            $("#btn1").click(function(){
+                $(".class2").hide();
+            });
+            $("#btn2").click(function(){
+                $(".class2").show();
+            });
+            $("#btn3").click(function(){
+                $(".class2").css("color", "red");
+        })
+        
+    })
+})
+    </script>
+</head>
+<body>
+    <!-- jQuert : javascript 라이브러리
+        바닐라 자바스크립트 -->
+        <h2 id="id1">내용1</h2>
+        <h3 class="class2">내용2</h3>
+        <button id="btn1">사라짐</button>
+        <button id="btn2">나타남</button>
+        <button id="btn3">색깔변경</button>
+        <script>
+            // 자바스크립트로 id1을 클릭했을때 함수 호출하기
+            var id1 = document.getElementById('id1');
+            id1.addEventListener("click", test1);
+            function test1(){
+                console.log('test1 함수 호출됨');
+            }
+        </script>
+    
+</body>
+</html>
