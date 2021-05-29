@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,21 +10,24 @@
         function test1() {
             var ele = document.getElementById('id1');
             console.log(ele.value);
-            document.getElementById('id2').value=ele.value;
-             
+            document.getElementById('id2').value = ele.value;
+
         }
     </script>
 </head>
+
 <body>
-   <div>
-    이메일 : <input type="text"> @
-    <input type="text" id="id2">
-    <select id="id1" onchange="test1()">
-        <option value="naver.com">naver.com</option>
-        <option value="daum.com">daum.com</option>
-        <option value="google.com">google.com</option>
-    </select>
-   
-</div>
+    <div>
+        이메일 : <input type="text"> @
+        <input type="text" id="id2">
+        <select id="id1" onchange="test1()">
+            <option value="naver.com">naver.com</option>
+            <option value="daum.com">daum.com</option>
+            <option value="google.com">google.com</option>
+        </select>
+
+    </div>
+
 </body>
+
 </html>
